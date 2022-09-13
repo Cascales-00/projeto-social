@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    background:url('../imagens/fundo-madeira.jpg') center top no-repeat; 
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+main {
+    height: 100vh;
+    position: relative;
+}
+
+section#telefone {
+    background: url('../imagens/frame-iphone.png');
+    height: 627px;
+    width: 311px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+iframe#tela {
+    position: relative;
+    top: 80px;
+    left: 22px;
+    height: 471px;
+    width: 268px;
+    
+}
+
+section#redes-sociais{
+    text-align: right;
+}
+
+section#redes-sociais > a > img{
+    margin: 15px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.493);
+    box-sizing: border-box;/* para borda acompanhar a imagem sem fazer alteração no posicionamento quando passar a seta por cima da imagem*/
+    
+}
+
+section#redes-sociais > a > img:hover {
+    border: 3px solid rgba(255, 255, 255, 0.493);
+    transform: translate(-3px, -3px); /* para movimentar o botão quando passar o mouse*/
+    box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.804);
+    transition: transform 0.5s, border 0.4s;
+    /* transsition = tempo da animação do efeito / declare o parametro que quer alterar ea duração, caso tenha mais de um parametro separar por (,) virgula
+       
+    */
+}
